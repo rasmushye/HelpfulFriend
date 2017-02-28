@@ -22,5 +22,10 @@ namespace HelpfulFriend
             BirthDate = bd;
             Email = mail;
         }
+
+        static void Main(string[] args)
+        {
+
+        }
     }
 }
