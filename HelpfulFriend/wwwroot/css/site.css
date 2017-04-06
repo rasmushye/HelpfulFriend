@@ -35,3 +35,7 @@ textarea {
         display: none;
     }
 }
+
+.jobs {
+    border: 1px solid black;
+}

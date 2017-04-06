@@ -27,6 +27,20 @@ namespace HelpfulFriend.Controllers
             return View();
         }
 
+      
+
+        public IActionResult Joboffer()
+        {
+            ViewData["Jobs"] = "Page with job offerings";
+            return View();
+        }
+
+        public IActionResult CreateJob()
+        {
+            ViewData["Title"] = "On this page, you can create a job";
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();

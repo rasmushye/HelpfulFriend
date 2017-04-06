@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Create Job";
+}
+
+<h4>Insert the right data to each component, to create a job... bullshit danglish</h4>
+
+<form>
+    <fieldset class="create">
+        <legend>Create Job</legend>
+        Job title:      <input type="text" name="jname" required="required" /><br />
+        Location:       <input type="text" name="location" /><br />
+        Job date:       <input type="date" name="jdate" /><br />
+        Price:          <input type="text" name="price" /><br />
+        Estimated time: <input type="number" name="jtime" /><br />
+        Category: 
+        <select name="Category">
+            <option>Choose...                      </option>
+            <option value="Gardening">Gardening    </option>
+            <option value="Babysitting">Babysitting</option>
+            <option value="Auto">Auto              </option>
+            <option value="IT">IT                  </option>
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="Create job" />
+    </fieldset>
+</form> 
