@@ -8,22 +8,36 @@
 <h4>Insert the right data to each component, to create a job... bullshit danglish</h4>
 
 <form>
-    <fieldset class="create">
+    <fieldset class="create" align="center">
         <legend>Create Job</legend>
-        Job title:      <input type="text" name="jname" required="required" /><br />
-        Location:       <input type="text" name="location" /><br />
-        Job date:       <input type="date" name="jdate" /><br />
-        Price:          <input type="text" name="price" /><br />
-        Estimated time: <input type="number" name="jtime" /><br />
-        Category: 
-        <select name="Category">
-            <option>Choose...                      </option>
-            <option value="Gardening">Gardening    </option>
-            <option value="Babysitting">Babysitting</option>
-            <option value="Auto">Auto              </option>
-            <option value="IT">IT                  </option>
-        </select>
-        <br />
+        <table>
+            <tr>
+                <td>Job title:</td><td><input type="text" name="jname" required="required" /></td>
+            </tr>
+            <tr>
+                <td>Location:</td><td><input type="text" name="location" /></td>
+            </tr>
+            <tr>
+                <td>Job date:</td><td><input type="date" name="jdate" /></td>
+            </tr>
+            <tr>
+                <td>Price:</td><td><input type="text" name="price" /></td>
+            </tr>
+            <tr>
+                <td>Estimated time:</td><td><input type="number" name="jtime" /></td>
+            </tr>
+            <tr>
+                <td>Category:</td>
+                <td>
+                    <select name="Category">
+                        <option>Choose...</option>
+                        <option value="Gardening">Gardening</option>
+                        <option value="Babysitting">Babysitting</option>
+                        <option value="Auto">Auto</option>
+                        <option value="IT">IT</option>
+                    </select></td>
+            </tr>
+        </table>
         <br />
         <input type="submit" value="Create job" />
     </fieldset>
