@@ -23,6 +23,6 @@ namespace HelpfulFriend
             Email = mail;
         }
 
-    
+   
     }
 }
