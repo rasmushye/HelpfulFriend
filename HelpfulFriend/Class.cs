@@ -23,6 +23,10 @@ namespace HelpfulFriend
             Email = mail;
         }
 
-   
+        static void Main(string[] args)
+        {
+
+        }
+    
     }
 }
