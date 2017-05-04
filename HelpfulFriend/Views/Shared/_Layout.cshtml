@@ -15,29 +15,38 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css">
     </environment>
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity:0.9;
+        }
+      
+    </style>
     @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Helpful Friend</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a asp-area="" asp-controller="Home" asp-action="joboffer">Jobs</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="createjob">Create Job</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
                 </ul>
             </div>
         </div>
