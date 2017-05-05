@@ -7,13 +7,27 @@
 
 <head>
     <style>
-        table{
-            width: 80%;
+        table {
+            width: 100%;
+            border: 1px solid #ddd;
         }
 
-        th{
-            height: 25px;
-            border: 1px solid black;
+        th {
+            border: 1px solid #ddd;
+            height: 20px;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 15px;
+            display: table-cell;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            font-size: large;
+            text-align: center;
+            font-family: sans-serif;
         }
     </style>
 </head>
@@ -23,16 +37,26 @@
     <p>On this page, you can view jobs offered by other users</p>
 
     <table align="center">
+        <thead>
+            <tr>
+                <th>Job Title</th>
+                <th>Job Date</th>
+                <th>Location</th>
+                <th>Price</th>
+                <th>Estimated Time</th>
+                <th>Category</th>
+            </tr>
+        </thead>
         <tr>
-            <th><h3>Job Title</h3></th>
-            <th><h3>Job Date</h3></th>
-            <th><h3>Location</h3></th>
-            <th><h3>Price</h3></th>
-            <th><h3>Estimated Time</h3></th>
-            <th><h3>Category</h3></th>
-        </tr>
+            <td>Lawn mowing</td><td>18/3-2017</td><td>Aalborg</td><td>DKK 150</td><td>1 hour</td><td>Gardening</td>
+       </tr>
         <tr>
-            <td></td>
+            <td>Babysitting</td>
+            <td>20/4-2017</td>
+            <td>Aalborg</td>
+            <td>DKK 200</td>
+            <td>4 hour</td>
+            <td>Babysitting</td>
         </tr>
     </table>
 </body>

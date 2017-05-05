@@ -45,5 +45,11 @@ namespace HelpfulFriend.Controllers
         {
             return View();
         }
+
+        public IActionResult Login()
+        {
+            ViewData["Login"] = "Login page";
+            return View();
+        }
     }
 }
