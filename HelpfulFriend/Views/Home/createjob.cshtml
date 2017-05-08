@@ -4,41 +4,60 @@
 @{
     ViewData["Title"] = "Create Job";
 }
+<header>
+    <style>
+        form {
+            text-align: center;
+            width: 300px;
+            margin: 0 auto;
+            padding-top: 75px;
+        }
+    
+    </style>
+</header>
+<body>
+    <div class="container-fluid text-center">
+        <form>
+            <div class="form-group" has-success has-feedback>
+                <label for="jname" required="required">What do you need help with?</label>
+                <input class="form-control" placeholder="Enter a title for the job, ie. lawnmowing" type="text" id="jname" required="required">
 
-<h4>Insert the right data to each component, to create a job... bullshit danglish</h4>
-
-<form>
-    <fieldset class="create" align="center">
-        <legend>Create Job</legend>
-        <table>
-            <tr>
-                <td>Job title:</td><td><input type="text" name="jname" required="required" /></td>
-            </tr>
-            <tr>
-                <td>Location:</td><td><input type="text" name="location" /></td>
-            </tr>
-            <tr>
-                <td>Job date:</td><td><input type="date" name="jdate" /></td>
-            </tr>
-            <tr>
-                <td>Price:</td><td><input type="text" name="price" /></td>
-            </tr>
-            <tr>
-                <td>Estimated time:</td><td><input type="number" name="jtime" /></td>
-            </tr>
-            <tr>
-                <td>Category:</td>
-                <td>
-                    <select name="Category">
-                        <option>Choose...</option>
-                        <option value="Gardening">Gardening</option>
-                        <option value="Babysitting">Babysitting</option>
-                        <option value="Auto">Auto</option>
-                        <option value="IT">IT</option>
-                    </select></td>
-            </tr>
-        </table>
-        <br />
-        <input type="submit" value="Create job" />
-    </fieldset>
-</form> 
+                <br /><br />
+                <label for="category">Which category describes your need?</label>
+                <select class="form-control" id="category" required="required">
+                    <option value="">Choose...</option>
+                    <option value="gardening">Gardening</option>
+                    <option value="housework">Housework</option>
+                    <option value="IT">IT</option>
+                    <option value="vehicles">Vehicles</option>
+                </select>
+                <br /><br />
+                <label for="tags" required="required">Which tags describes your need?</label>
+                <input class="form-control" placeholder="Enter garden, grass etc. for lawnmowing " type="text" id="tags">
+                <br /><br />
+                <label for="date">When do you need help?</label>
+                <div class="input-group date" id="jdate">
+                    <input type="date" class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                <p style="font-size: 12px;"><i>Leave blank if you want to arrange it with the person applying</i></p>
+                <br />
+                <label for="location">Where do you need help?</label>
+                <input class="form-control" placeholder="Enter an address" type="text" id="location" required="required">
+                <br /><br />
+                <label for="price">What amount of payment do you want to offer?</label>
+                <input class="form-control" placeholder="Enter an amount in DKK" type="text" id="price">
+                <div class="radio" >
+                    <label><input type="radio" name="price">Only for free</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="price">Arrange with helper</label>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
