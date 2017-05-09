@@ -48,14 +48,12 @@
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Helpful Friend</a>
-            </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a asp-area="" asp-controller="Home" asp-action="joboffer">Jobs</a></li>
@@ -66,7 +64,6 @@
                 </ul>
             </div>
     </nav>
-    <div class="container body-content">
         @RenderBody()
         <hr />
         <footer class="text-center">
@@ -74,22 +71,13 @@
                 <strong>Helpful Friend</strong>
             </p>
             <p>
-                www.HelpfulFriend.dk
+                <span class="glyphicon glyphicon-map-marker"></span> Badehusvej 9, 9000 Aalborg
             </p>
             <p>
-                Badehusvej 9
+                <span class="glyphicon glyphicon-phone"></span> +45 12 34 56 78
             </p>
             <p>
-                DK-9000 Aalborg C
-            </p>
-            <p>
-                DK +45 12 34 56 78
-            </p>
-            <p>
-                inf2b306@student.aau.dk
-            </p>
-            <p>
-                Gruppe B306
+                <span class="glyphicon glyphicon-envelope"></span> inf2b306@student.aau.dk
             </p>
             </footer>
     </div>
