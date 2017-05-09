@@ -7,16 +7,45 @@
   <PropertyGroup>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\**" />
+    <Compile Remove="Migrations\**" />
+    <Compile Remove="MModels\**" />
+    <Compile Remove="Views\Jobs\**" />
+    <Content Remove="Data\**" />
+    <Content Remove="Migrations\**" />
+    <Content Remove="MModels\**" />
+    <Content Remove="Views\Jobs\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <EmbeddedResource Remove="MModels\**" />
+    <EmbeddedResource Remove="Views\Jobs\**" />
+    <None Remove="Data\**" />
+    <None Remove="Migrations\**" />
+    <None Remove="MModels\**" />
+    <None Remove="Views\Jobs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\HelpfulFriendcontroller.cs" />
+    <Compile Remove="Controllers\JobsController.cs" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore" Version="1.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.0.2" />
-    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.0.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

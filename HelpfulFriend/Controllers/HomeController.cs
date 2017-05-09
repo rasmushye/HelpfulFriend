@@ -31,7 +31,7 @@ namespace HelpfulFriend.Controllers
 
         public IActionResult Joboffer()
         {
-            ViewData["Jobs"] = "Page with job offerings";
+            ViewData["Jobs"] = "Find the job most suitable for you!";
             return View();
         }
 
