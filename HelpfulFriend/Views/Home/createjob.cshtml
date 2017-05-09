@@ -12,52 +12,57 @@
             margin: 0 auto;
             padding-top: 75px;
         }
-    
     </style>
 </header>
 <body>
-    <div class="container-fluid text-center">
-        <form>
-            <div class="form-group" has-success has-feedback>
-                <label for="jname" required="required">What do you need help with?</label>
-                <input class="form-control" placeholder="Enter a title for the job, ie. lawnmowing" type="text" id="jname" required="required">
-
-                <br /><br />
-                <label for="category">Which category describes your need?</label>
-                <select class="form-control" id="category" required="required">
-                    <option value="">Choose...</option>
-                    <option value="gardening">Gardening</option>
-                    <option value="housework">Housework</option>
-                    <option value="IT">IT</option>
-                    <option value="vehicles">Vehicles</option>
-                </select>
-                <br /><br />
-                <label for="tags" required="required">Which tags describes your need?</label>
-                <input class="form-control" placeholder="Enter garden, grass etc. for lawnmowing " type="text" id="tags">
-                <br /><br />
-                <label for="date">When do you need help?</label>
-                <div class="input-group date" id="jdate">
-                    <input type="date" class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-                <p style="font-size: 12px;"><i>Leave blank if you want to arrange it with the person applying</i></p>
-                <br />
-                <label for="location">Where do you need help?</label>
-                <input class="form-control" placeholder="Enter an address" type="text" id="location" required="required">
-                <br /><br />
-                <label for="price">What amount of payment do you want to offer?</label>
-                <input class="form-control" placeholder="Enter an amount in DKK" type="text" id="price">
-                <div class="radio" >
-                    <label><input type="radio" name="price">Only for free</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="price">Arrange with helper</label>
-                </div>
-                <br />
-                <button type="submit" class="btn btn-success">Submit</button>
-            </div>
-        </form>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Create Job</h1>
+            <p>
+                Create a job on this page which describes your issue, that people can apply to
+            </p>
+        </div>
     </div>
+    <form>
+        <div class="form-group" has-success has-feedback>
+            <label for="jname" required="required">What do you need help with?</label>
+            <input class="form-control" placeholder="Enter a title for the job, ie. lawnmowing" type="text" id="jname" required="required">
+
+            <br /><br />
+            <label for="category">Which category describes your need?</label>
+            <select class="form-control" id="category" required="required">
+                <option value="">Choose...</option>
+                <option value="gardening">Gardening</option>
+                <option value="housework">Housework</option>
+                <option value="IT">IT</option>
+                <option value="vehicles">Vehicles</option>
+            </select>
+            <br /><br />
+            <label for="tags" required="required">Which tags describes your need?</label>
+            <input class="form-control" placeholder="Enter garden, grass etc. for lawnmowing " type="text" id="tags">
+            <br /><br />
+            <label for="date">When do you need help?</label>
+            <div class="input-group date" id="jdate">
+                <input type="date" class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+            <p style="font-size: 12px;"><i>Leave blank if you want to arrange it with the person applying</i></p>
+            <br />
+            <label for="location">Where do you need help?</label>
+            <input class="form-control" placeholder="Enter an address" type="text" id="location" required="required">
+            <br /><br />
+            <label for="price">What amount of payment do you want to offer?</label>
+            <input class="form-control" placeholder="Enter an amount in DKK" type="text" id="price">
+            <div class="radio">
+                <label><input type="radio" name="price">Only for free</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="price">Arrange with helper</label>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </form>
 </body>

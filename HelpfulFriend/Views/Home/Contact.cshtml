@@ -1,17 +1,31 @@
 ﻿@{
     ViewData["Title"] = "Contact";
 }
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
-
-<address>
-    Selma Lagerløfs Vej 300<br />
-    9000 Aalborg, Nordjylland, Danmark<br />
-    <abbr title="Phone">Phone no.:</abbr>
-    12 34 56 78
-</address>
-
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Hye@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marc@example.com</a>
-</address>
+<div class="container">
+    <h1 class="text-center">Contact Us</h1>
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <p><span class="glyphicon glyphicon-map-marker"></span> Badehusvej 9, 9000 Aalborg</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +45 12 34 56 78</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> inf2b306@student.aau.dk </p>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" style="max-width:670px"></textarea>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <br />
+                    <button class="btn btn-success" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
